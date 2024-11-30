@@ -1,0 +1,215 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restaurent Contact form</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; 
+  /* 16:9 Aspect Ratio */
+  text-align: right;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: space between;
+  border: none</style>;
+</head>
+<body>
+    <div class="form-container">
+    	<h2>Restaurant Contact form</h2>
+    	<form action="a" method="post">
+    		<div class="first-group">
+    			<label for="first-name">Name:*</label>
+    			<div class="name-fields">
+    				<input type="text" id="first-name" name="first-name" placeholder="first" required>
+    				<input type="text" id="last-name" name="last-name" placeholder="last" required>
+    			</div>
+    		</div>
+
+    		<div class="form-group">
+    			<label for="email">email address: </label>
+    			<input type="email" id="email" name="email" placeholder="abc@gmail.com">
+    		</div>
+    		
+    		<div class="form-group">
+    		    <label for="phone">Phone number:*</label>
+    		    <input type="tel" id="phone" name="phone" placeholder="000000000" required>
+    		</div>
+    	    
+    	    <div class="form-group">
+    	       <label> Have you tested our dishes?</label>
+    	       <div class="radio-group">
+    	            <label><input type="radio" name="tested" value="yes">Yes</label>
+    	            <label><input type="radio" name="tested" value="yes">No</label>
+    	            <label><input type="radio" name="tested" value="yes">Other</label>
+               </div>
+            </div>
+
+            <div class="form-group">
+            	<label for="message">What can be do for you?*</label>
+            	<textarea id="message" name="message" rows="5" required></textarea>
+
+           <div class="form-group">
+               <button type="Submit">Submit form</button>
+           </div>
+       </div>
+   </form>
+   <div class="container">
+   <iframe class="responsive-iframe" src="https://www.google.co.in/maps/@18.5991168,73.8131968,11z?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D" ></iframe>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        /* Container to hold the Google Map with an aspect ratio */
+        .container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 56.25%; 
+            /* 16:9 Aspect Ratio */
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            display: space-between;
+            border: none;
+        }
+
+        /* Styling for the form container */
+        .form-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .form-group .radio-group label {
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Restaurant Contact Form</h2>
+        <form action="a" method="post">
+            <div class="first-group">
+                <label for="first-name">Name:*</label>
+                <div class="name-fields">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:*</label>
+                <input type="tel" id="phone" name="phone" placeholder="0000000000" required>
+            </div>
+
+            <div class="form-group">
+                <label>Have you tested our dishes?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="tested" value="yes"> Yes</label>
+                    <label><input type="radio" name="tested" value="no"> No</label>
+                    <label><input type="radio" name="tested" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">What can we do for you?*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Google Map Embed -->
+    <div class="container">
+        <iframe class="responsive-iframe" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.624798216116!2d73.8131968!3d18.5991168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1ac94f22693%3A0xd4e2b3f819c91f8d!2sYour%20Restaurant%20Name%20Here!5e0!3m2!1sen!2sin!4v1639396946247!5m2!1sen!2sin" 
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+</html>

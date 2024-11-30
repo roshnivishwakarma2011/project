@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 30px;
+            text-decoration: underline;
+        }
+
+        /* Menu container */
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        /* Section for each menu category */
+        .menu-category {
+            margin-bottom: 30px;
+        }
+
+        /* Style for each menu item */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Name and description of the menu item */
+        .menu-item-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-item-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Price styling */
+        .menu-item-price {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Hover effect for items */
+        .menu-item:hover {
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Restaurant Menu Section -->
+    <div class="menu-container">
+        <h1>Welcome to cafe bliss!</h1>
+        <p style="text-align: center; font-size: 16px;">Enjoy our delicious meals with a variety of options!</p>
+
+        <!-- Appetizers Section -->
+        <div class="menu-category">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Bruschetta</span>
+                    <p class="menu-item-description">Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
+                </div>
+                <span class="menu-item-price">$6.99</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Stuffed Mushrooms</span>
+                    <p class="menu-item-description">Mushrooms stuffed with cheese, herbs, and breadcrumbs.</p>
+                </div>
+                <span class="menu-item-price">$7.99</span>
+            </div>
+        </div>
+
+        <!-- Main Course Section -->
+        <div class="menu-category">
+            <h2>Main Course</h2>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Grilled Chicken Breast</span>
+                    <p class="menu-item-description">Juicy grilled chicken breast served with roasted vegetables.</p>
+                </div>
+                <span class="menu-item-price">$15.99</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Spaghetti Carbonara</span>
+                    <p class="menu-item-description">Classic pasta with creamy sauce, pancetta, and parmesan cheese.</p>
+                </div>
+                <span class="menu-item-price">$13.99</span>
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Tiramisu</span>
+                    <p class="menu-item-description">Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cheese.</p>
+                </div>
+                <span class="menu-item-price">$5.99</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Chocolate Lava Cake</span>
+                    <p class="menu-item-description">Warm chocolate cake with a gooey molten center.</p>
+                </div>
+                <span class="menu-item-price">$6.49</span>
+            </div>
+        </div>
+
+        <!-- Beverages Section -->
+        <div class="menu-category">
+            <h2>Beverages</h2>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Soft Drink</span>
+                    <p class="menu-item-description">Coke, Sprite, or Fanta.</p>
+                </div>
+                <span class="menu-item-price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <span class="menu-item-name">Fresh Lemonade</span>
+                    <p class="menu-item-description">Refreshing homemade lemonade with a hint of mint.</p>
+                </div>
+                <span class="menu-item-price">$3.50</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
